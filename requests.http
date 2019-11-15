@@ -1,0 +1,24 @@
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{"username": "hthuong2209", "password": "123123"}
+### 
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{"username": "hthuong2209", "password": "123123"}
+
+###
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJodGh1b25nMjIwOSIsImV4cCI6MTU3MzgxODQ1MzY5MX0.O1RG1eTmMQ77sCcQqr4Oc1y53GVUjAfXyagwMMJWfCk
+
+###
+POST http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwidXNlcm5hbWUiOiJodGh1b25nMjIwOSIsImV4cCI6MTU3MzgxODQ1MzY5MX0.O1RG1eTmMQ77sCcQqr4Oc1y53GVUjAfXyagwMMJWfCk
+Content-Type: application/json
+
+{"content": "hello world!!"}
+
+###
+GET http://localhost:3000/posts/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJodGh1b25nMjIwOSIsImV4cCI6MTU3MzgxODczMjE2Mn0.JVWMF-1ZuMrveafETCeHCuunp4OOjq5vSz3dGu59ZY4
